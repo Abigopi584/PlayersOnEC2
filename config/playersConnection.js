@@ -7,11 +7,11 @@ async function playersDbConnection () {
       console.log(`Connected Successfully`);
     })
       .catch((e) => {
-        console.err(e);
+        console.log(e);
         process.exit(1);
       });
   } catch (e) {
-    console.err(e);
+    console.log(e);
   }
 }
 
