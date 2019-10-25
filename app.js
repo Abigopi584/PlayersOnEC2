@@ -11,7 +11,6 @@ const playerWriteStream = fs.createWriteStream('./output.log', { flags: 'a' });
 cron.schedule("*/6 * * * * *", () => {
   console.log('Write to Output.log file every 10 sec');
   playerController(playerWriteStream);
-
 });
 
 
