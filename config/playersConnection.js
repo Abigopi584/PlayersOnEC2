@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
-const mongoUri = `mongodb://127.0.0.1/Players`;
 
 async function playersDbConnection () {
   try {
-    await mongoose.connect(mongoUri, { useNewUrlParser: true }).then(() => {
+    // eslint-disable-next-line max-len
+    await mongoose.connect('mongodb://abigopi584:abibala8@ds241097.mlab.com:41097/players',
+      { useNewUrlParser: true }).then(() => {
       console.log(`Connected Successfully`);
     })
       .catch((e) => {
